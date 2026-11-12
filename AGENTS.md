@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Enrollment data lives in browser localStorage via `src/lib/enrollments.ts` (single source for schema, storage and session); keep pages calling those helpers so storage can be swapped in one place.
